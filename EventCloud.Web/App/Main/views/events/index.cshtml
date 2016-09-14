@@ -1,0 +1,35 @@
+﻿<div id="EventsIndex" ng-controller="app.views.events.index as vm">
+    <h2>
+        <span>Events</span>
+        <a ng-click="vm.openNewEventDialog()" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i> New event</a>
+        <span class="pull-right event-filters">
+            <input type="checkbox" ng-model="vm.filters.includeCanceledEvents" /> show canceled events
+        </span>
+    </h2>
+    <div class="row">
+        <div ng-repeat="event in vm.events" class="event-list-item col-md-6">
+            <div class="event-body">
+                <h3 class="event-title">
+                    {{event.title}}
+                </h3>
+                <p class="event-description">{{event.description | characters:100}}</p>
+                <div ng-if="event.isCancelled" class="event-canceled-info">This event is canceled!</div>
+                <div class="event-registration-info">
+                    <span ng-if="event.registrationsCount < event.maxRegistrationCount">
+                        {{event.registrationsCount}} of {{event.maxRegistrationCount}} registred.
+                    </span>
+                    <span ng-if="event.maxRegistrationCount > 0 && event.registrationsCount >= event.maxRegistrationCount">
+                        {{event.registrationsCount}} registered. No new registration available.
+                    </span>
+                    <span ng-if="event.maxRegistrationCount <= 0">
+                        {{event.registrationsCount}} registered. Unlimited registrations.
+                    </span>
+                </div>
+                <div class="event-actions">
+                    <a class="btn btn-sm btn-info" ng-href="#/events/{{event.id}}">Details <i class="fa fa-arrow-circle-right"></i></a>
+                </div>
+                <span class="event-date"><i class="fa fa-calendar-times-o"></i> {{event.date | momentFormat:'DD.MM.YYYY'}}</span>
+            </div>
+        </div>
+    </div>
+</div>
