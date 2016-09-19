@@ -10012,3 +10012,801 @@ Abp.UI.UserFriendlyException: Can not register event in the past!
    at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
    at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
    at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()
+DEBUG 2016-09-15 09:05:31,242 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2016-09-15 09:05:37,380 [1    ] Abp.Modules.AbpModuleManager             - Found 13 ABP modules in total.
+DEBUG 2016-09-15 09:05:37,384 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.7.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-15 09:05:37,386 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.7.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-15 09:05:37,387 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.7.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-15 09:05:37,387 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.7.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-15 09:05:37,387 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.7.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-15 09:05:37,387 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.7.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-15 09:05:37,413 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=0.7.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-15 09:05:37,413 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=0.7.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-15 09:05:37,414 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ITRACK.ITRACKApplicationModule, EventCloud.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-15 09:05:37,414 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ITRACK.ITRACKCoreModule, EventCloud.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-15 09:05:37,414 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ITRACK.ITRACKDataModule, EventCloud.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-15 09:05:37,414 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ITRACK.Web.ITRACKWebModule, EventCloud.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-15 09:05:37,414 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ITRACK.Api.ITRACKWebApiModule, EventCloud.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-15 09:05:37,421 [1    ] Abp.Modules.AbpModuleManager             - 13 modules loaded.
+DEBUG 2016-09-15 09:05:42,870 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2016-09-15 09:05:42,913 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2016-09-15 09:05:42,963 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2016-09-15 09:05:42,963 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: ITRACK
+DEBUG 2016-09-15 09:05:42,965 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2016-09-15 09:05:46,726 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 6 classes defines auto mapping attributes
+DEBUG 2016-09-15 09:05:46,726 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ITRACK.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2016-09-15 09:05:47,082 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ITRACK.Sessions.Dto.UserLoginInfoDto
+DEBUG 2016-09-15 09:05:47,136 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ITRACK.Events.Dtos.EventListDto
+DEBUG 2016-09-15 09:05:47,258 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ITRACK.Events.Dtos.EventRegistrationDto
+DEBUG 2016-09-15 09:05:47,264 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ITRACK.Events.Dtos.EventDetailOutput
+DEBUG 2016-09-15 09:05:47,268 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ITRACK.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2016-09-15 09:05:47,387 [1    ] Default                                  - Dynamic web api controller is created for type 'ITRACK.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2016-09-15 09:05:47,390 [1    ] Default                                  - Dynamic web api controller is created for type 'ITRACK.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2016-09-15 09:05:47,391 [1    ] Default                                  - Dynamic web api controller is created for type 'ITRACK.Statistics.IStatisticsAppService' with service name 'app/statistics'.
+DEBUG 2016-09-15 09:05:47,393 [1    ] Default                                  - Dynamic web api controller is created for type 'ITRACK.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2016-09-15 09:05:47,394 [1    ] Default                                  - Dynamic web api controller is created for type 'ITRACK.Events.IEventAppService' with service name 'app/event'.
+WARN  2016-09-15 09:06:03,945 [11   ] Default                                  - Can not find 'Events' in localization source 'ITRACK'! No default language is defined!
+WARN  2016-09-15 09:06:03,945 [11   ] Default                                  - Can not find 'About' in localization source 'ITRACK'! No default language is defined!
+WARN  2016-09-15 09:13:16,324 [16   ] Default                                  - Can not find 'TenancyName' in localization source 'ITRACK'! No default language is defined!
+WARN  2016-09-15 09:13:16,324 [16   ] Default                                  - Can not find 'Name' in localization source 'ITRACK'! No default language is defined!
+WARN  2016-09-15 09:13:16,325 [16   ] Default                                  - Can not find 'Surname' in localization source 'ITRACK'! No default language is defined!
+WARN  2016-09-15 09:13:16,325 [16   ] Default                                  - Can not find 'EmailAddress' in localization source 'ITRACK'! No default language is defined!
+WARN  2016-09-15 09:13:16,325 [16   ] Default                                  - Can not find 'Admin password' in localization source 'ITRACK'! No default language is defined!
+WARN  2016-09-15 09:13:16,860 [21   ] Default                                  - Can not find 'Events' in localization source 'ITRACK'! No default language is defined!
+WARN  2016-09-15 09:13:16,860 [21   ] Default                                  - Can not find 'About' in localization source 'ITRACK'! No default language is defined!
+WARN  2016-09-15 09:34:28,550 [73   ] Default                                  - Can not find 'Events' in localization source 'ITRACK'! No default language is defined!
+WARN  2016-09-15 09:34:28,550 [73   ] Default                                  - Can not find 'About' in localization source 'ITRACK'! No default language is defined!
+DEBUG 2016-09-15 15:54:05,119 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2016-09-15 15:54:17,754 [1    ] Abp.Modules.AbpModuleManager             - Found 13 ABP modules in total.
+DEBUG 2016-09-15 15:54:17,780 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.7.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-15 15:54:17,783 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.7.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-15 15:54:17,784 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.7.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-15 15:54:17,784 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.7.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-15 15:54:17,784 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.7.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-15 15:54:17,784 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.7.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-15 15:54:17,798 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=0.7.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-15 15:54:17,798 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=0.7.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-15 15:54:17,799 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ITRACK.ITRACKApplicationModule, EventCloud.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-15 15:54:17,799 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ITRACK.ITRACKCoreModule, EventCloud.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-15 15:54:17,800 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ITRACK.ITRACKDataModule, EventCloud.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-15 15:54:17,800 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ITRACK.Web.ITRACKWebModule, EventCloud.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-15 15:54:17,800 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ITRACK.Api.ITRACKWebApiModule, EventCloud.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-15 15:54:17,901 [1    ] Abp.Modules.AbpModuleManager             - 13 modules loaded.
+DEBUG 2016-09-15 15:54:21,001 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2016-09-15 15:54:21,097 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2016-09-15 15:54:21,098 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2016-09-15 15:54:21,098 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: ITRACK
+DEBUG 2016-09-15 15:54:21,099 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2016-09-15 15:54:24,945 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 6 classes defines auto mapping attributes
+DEBUG 2016-09-15 15:54:24,945 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ITRACK.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2016-09-15 15:54:25,482 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ITRACK.Sessions.Dto.UserLoginInfoDto
+DEBUG 2016-09-15 15:54:25,503 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ITRACK.Events.Dtos.EventListDto
+DEBUG 2016-09-15 15:54:25,599 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ITRACK.Events.Dtos.EventRegistrationDto
+DEBUG 2016-09-15 15:54:25,601 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ITRACK.Events.Dtos.EventDetailOutput
+DEBUG 2016-09-15 15:54:25,602 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ITRACK.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2016-09-15 15:54:25,721 [1    ] Default                                  - Dynamic web api controller is created for type 'ITRACK.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2016-09-15 15:54:25,722 [1    ] Default                                  - Dynamic web api controller is created for type 'ITRACK.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2016-09-15 15:54:25,723 [1    ] Default                                  - Dynamic web api controller is created for type 'ITRACK.Statistics.IStatisticsAppService' with service name 'app/statistics'.
+DEBUG 2016-09-15 15:54:25,724 [1    ] Default                                  - Dynamic web api controller is created for type 'ITRACK.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2016-09-15 15:54:25,725 [1    ] Default                                  - Dynamic web api controller is created for type 'ITRACK.Events.IEventAppService' with service name 'app/event'.
+WARN  2016-09-15 15:54:34,790 [10   ] Default                                  - Can not find 'Events' in localization source 'ITRACK'! No default language is defined!
+WARN  2016-09-15 15:54:34,791 [10   ] Default                                  - Can not find 'About' in localization source 'ITRACK'! No default language is defined!
+DEBUG 2016-09-15 15:56:38,122 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2016-09-15 15:56:46,191 [1    ] Abp.Modules.AbpModuleManager             - Found 13 ABP modules in total.
+DEBUG 2016-09-15 15:56:46,196 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.7.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-15 15:56:46,198 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.7.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-15 15:56:46,199 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.7.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-15 15:56:46,291 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.7.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-15 15:56:46,291 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.7.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-15 15:56:46,292 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.7.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-15 15:56:46,318 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=0.7.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-15 15:56:46,319 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=0.7.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-15 15:56:46,319 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ITRACK.ITRACKApplicationModule, EventCloud.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-15 15:56:46,320 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ITRACK.ITRACKCoreModule, EventCloud.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-15 15:56:46,320 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ITRACK.ITRACKDataModule, EventCloud.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-15 15:56:46,320 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ITRACK.Web.ITRACKWebModule, EventCloud.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-15 15:56:46,321 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ITRACK.Api.ITRACKWebApiModule, EventCloud.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-15 15:56:46,343 [1    ] Abp.Modules.AbpModuleManager             - 13 modules loaded.
+DEBUG 2016-09-15 15:56:58,050 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2016-09-15 15:56:58,056 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2016-09-15 15:56:58,057 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2016-09-15 15:56:58,057 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: ITRACK
+DEBUG 2016-09-15 15:56:58,057 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2016-09-15 15:57:01,316 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 6 classes defines auto mapping attributes
+DEBUG 2016-09-15 15:57:01,316 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ITRACK.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2016-09-15 15:57:01,398 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ITRACK.Sessions.Dto.UserLoginInfoDto
+DEBUG 2016-09-15 15:57:01,405 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ITRACK.Events.Dtos.EventListDto
+DEBUG 2016-09-15 15:57:01,492 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ITRACK.Events.Dtos.EventRegistrationDto
+DEBUG 2016-09-15 15:57:01,495 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ITRACK.Events.Dtos.EventDetailOutput
+DEBUG 2016-09-15 15:57:01,496 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ITRACK.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2016-09-15 15:57:01,559 [1    ] Default                                  - Dynamic web api controller is created for type 'ITRACK.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2016-09-15 15:57:01,561 [1    ] Default                                  - Dynamic web api controller is created for type 'ITRACK.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2016-09-15 15:57:01,562 [1    ] Default                                  - Dynamic web api controller is created for type 'ITRACK.Statistics.IStatisticsAppService' with service name 'app/statistics'.
+DEBUG 2016-09-15 15:57:01,564 [1    ] Default                                  - Dynamic web api controller is created for type 'ITRACK.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2016-09-15 15:57:01,565 [1    ] Default                                  - Dynamic web api controller is created for type 'ITRACK.Events.IEventAppService' with service name 'app/event'.
+WARN  2016-09-15 15:57:07,649 [8    ] Default                                  - Can not find 'TenancyName' in localization source 'ITRACK'! No default language is defined!
+WARN  2016-09-15 15:57:07,650 [8    ] Default                                  - Can not find 'Name' in localization source 'ITRACK'! No default language is defined!
+WARN  2016-09-15 15:57:07,650 [8    ] Default                                  - Can not find 'Surname' in localization source 'ITRACK'! No default language is defined!
+WARN  2016-09-15 15:57:07,650 [8    ] Default                                  - Can not find 'EmailAddress' in localization source 'ITRACK'! No default language is defined!
+WARN  2016-09-15 15:57:07,650 [8    ] Default                                  - Can not find 'Admin password' in localization source 'ITRACK'! No default language is defined!
+WARN  2016-09-15 15:57:09,477 [6    ] Default                                  - Can not find 'Events' in localization source 'ITRACK'! No default language is defined!
+WARN  2016-09-15 15:57:09,477 [6    ] Default                                  - Can not find 'About' in localization source 'ITRACK'! No default language is defined!
+ERROR 2016-09-15 15:57:59,134 [8    ] .Mvc.Controllers.AbpHandleErrorAttribute - System.Data.SqlClient.SqlException (0x80131904): CREATE DATABASE statement not allowed within multi-statement transaction.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.<NonQuery>b__0(DbCommand t, DbCommandInterceptionContext`1 c)
+   at System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext,TResult](TTarget target, Func`3 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.NonQuery(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   at System.Data.Entity.SqlServer.SqlProviderServices.<>c__DisplayClass1a.<CreateDatabaseFromScript>b__19(DbConnection conn)
+   at System.Data.Entity.SqlServer.SqlProviderServices.<>c__DisplayClass33.<UsingConnection>b__32()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.<>c__DisplayClass1.<Execute>b__0()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute(Action operation)
+   at System.Data.Entity.SqlServer.SqlProviderServices.UsingConnection(DbConnection sqlConnection, Action`1 act)
+   at System.Data.Entity.SqlServer.SqlProviderServices.UsingMasterConnection(DbConnection sqlConnection, Action`1 act)
+   at System.Data.Entity.SqlServer.SqlProviderServices.CreateDatabaseFromScript(Nullable`1 commandTimeout, DbConnection sqlConnection, String createDatabaseScript)
+   at System.Data.Entity.SqlServer.SqlProviderServices.DbCreateDatabase(DbConnection connection, Nullable`1 commandTimeout, StoreItemCollection storeItemCollection)
+   at System.Data.Entity.Core.Common.DbProviderServices.CreateDatabase(DbConnection connection, Nullable`1 commandTimeout, StoreItemCollection storeItemCollection)
+   at System.Data.Entity.Core.Objects.ObjectContext.CreateDatabase()
+   at System.Data.Entity.Migrations.Utilities.DatabaseCreator.Create(DbConnection connection)
+   at System.Data.Entity.Migrations.DbMigrator.EnsureDatabaseExists(Action mustSucceedToKeepDatabase)
+   at System.Data.Entity.Migrations.DbMigrator.Update(String targetMigration)
+   at System.Data.Entity.Internal.DatabaseCreator.CreateDatabase(InternalContext internalContext, Func`3 createMigrator, ObjectContext objectContext)
+   at System.Data.Entity.Internal.InternalContext.CreateDatabase(ObjectContext objectContext, DatabaseExistenceState existenceState)
+   at System.Data.Entity.Database.Create(DatabaseExistenceState existenceState)
+   at System.Data.Entity.CreateDatabaseIfNotExists`1.InitializeDatabase(TContext context)
+   at System.Data.Entity.Internal.InternalContext.<>c__DisplayClassf`1.<CreateInitializationAction>b__e()
+   at System.Data.Entity.Internal.InternalContext.PerformInitializationAction(Action action)
+   at System.Data.Entity.Internal.InternalContext.PerformDatabaseInitialization()
+   at System.Data.Entity.Internal.LazyInternalContext.<InitializeDatabase>b__4(InternalContext c)
+   at System.Data.Entity.Internal.RetryAction`1.PerformAction(TInput input)
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeDatabaseAction(Action`1 action)
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeDatabase()
+   at System.Data.Entity.Database.Initialize(Boolean force)
+   at Abp.EntityFramework.AbpDbContext.Initialize()
+   at Castle.MicroKernel.LifecycleConcerns.InitializationConcern.Apply(ComponentModel model, Object component)
+   at Castle.MicroKernel.ComponentActivator.AbstractComponentActivator.ApplyConcerns(IEnumerable`1 steps, Object instance)
+   at Castle.MicroKernel.ComponentActivator.AbstractComponentActivator.ApplyCommissionConcerns(Object instance)
+   at Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.InternalCreate(CreationContext context)
+   at Castle.MicroKernel.ComponentActivator.AbstractComponentActivator.Create(CreationContext context, Burden burden)
+   at Castle.MicroKernel.Lifestyle.AbstractLifestyleManager.CreateInstance(CreationContext context, Boolean trackedExternally)
+   at Castle.MicroKernel.Lifestyle.AbstractLifestyleManager.Resolve(CreationContext context, IReleasePolicy releasePolicy)
+   at Castle.MicroKernel.Handlers.DefaultHandler.ResolveCore(CreationContext context, Boolean requiresDecommission, Boolean instanceRequired, Burden& burden)
+   at Castle.MicroKernel.Handlers.ExtendedHandler.InvokeResolvePipeline(Int32 extensionIndex, ResolveInvocation invocation)
+   at Castle.MicroKernel.Handlers.ExtendedHandler.<>c__DisplayClass6.<InvokeResolvePipeline>b__5()
+   at Castle.MicroKernel.Handlers.ResolveInvocation.Proceed()
+   at Castle.MicroKernel.Handlers.ComponentLifecycleExtension.Intercept(ResolveInvocation invocation)
+   at Castle.MicroKernel.Handlers.ExtendedHandler.InvokeResolvePipeline(Int32 extensionIndex, ResolveInvocation invocation)
+   at Castle.MicroKernel.Handlers.ExtendedHandler.Resolve(CreationContext context, Boolean instanceRequired)
+   at Castle.MicroKernel.Handlers.AbstractHandler.Resolve(CreationContext context)
+   at Castle.MicroKernel.DefaultKernel.ResolveComponent(IHandler handler, Type service, IDictionary additionalArguments, IReleasePolicy policy)
+   at Castle.MicroKernel.DefaultKernel.Castle.MicroKernel.IKernelInternal.Resolve(Type service, IDictionary arguments, IReleasePolicy policy)
+   at Castle.MicroKernel.DefaultKernel.Resolve(Type service, IDictionary arguments)
+   at Castle.Windsor.WindsorContainer.Resolve[T]()
+   at Abp.Dependency.IocManager.Resolve[T]()
+   at Abp.EntityFramework.Uow.EfUnitOfWork.Resolve[TDbContext]()
+   at Abp.EntityFramework.Uow.EfUnitOfWork.GetOrCreateDbContext[TDbContext]()
+   at Abp.EntityFramework.Uow.UnitOfWorkExtensions.GetDbContext[TDbContext](IActiveUnitOfWork unitOfWork)
+   at Abp.EntityFramework.Uow.UnitOfWorkDbContextProvider`1.get_DbContext()
+   at Castle.Proxies.EfRepositoryBase`2Proxy_1.get_Context_callback()
+   at Castle.Proxies.Invocations.EfRepositoryBase`3_get_Context_2.InvokeMethodOnTarget()
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Abp.Domain.Uow.UnitOfWorkInterceptor.Intercept(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.Proxies.EfRepositoryBase`2Proxy_1.get_Context()
+   at Abp.EntityFramework.Repositories.EfRepositoryBase`3.get_Table()
+   at Castle.Proxies.EfRepositoryBase`2Proxy_1.get_Table_callback()
+   at Castle.Proxies.Invocations.EfRepositoryBase`3_get_Table_2.InvokeMethodOnTarget()
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Abp.Domain.Uow.UnitOfWorkInterceptor.Intercept(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.Proxies.EfRepositoryBase`2Proxy_1.get_Table()
+   at Castle.Proxies.EfRepositoryBase`2Proxy_1.GetAll_callback()
+   at Castle.Proxies.Invocations.EfRepositoryBase`3_GetAll_2.InvokeMethodOnTarget()
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Abp.Domain.Uow.UnitOfWorkInterceptor.Intercept(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.Proxies.EfRepositoryBase`2Proxy_1.GetAll()
+   at Abp.EntityFramework.Repositories.EfRepositoryBase`3.<FirstOrDefaultAsync>d__c.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.MultiTenancy.AbpTenantManager`3.<CreateAsync>d__2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at ITRACK.Web.Controllers.AccountController.<RegisterTenant>d__18.MoveNext() in C:\Users\nuwan.p\Source\Repos\ITRACK_WEB\EventCloud.Web\Controllers\AccountController.cs:line 317
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.Threading.InternalAsyncHelper.<AwaitTaskWithPostActionAndFinallyAndGetResult>d__10`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Mvc.Async.TaskAsyncActionDescriptor.EndExecute(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeAsynchronousActionMethod>b__36(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+ClientConnectionId:6def3286-4710-41a5-8dab-35ad3abe83e2
+Error Number:226,State:5,Class:16
+System.Data.SqlClient.SqlException (0x80131904): CREATE DATABASE statement not allowed within multi-statement transaction.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.<NonQuery>b__0(DbCommand t, DbCommandInterceptionContext`1 c)
+   at System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext,TResult](TTarget target, Func`3 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.NonQuery(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   at System.Data.Entity.SqlServer.SqlProviderServices.<>c__DisplayClass1a.<CreateDatabaseFromScript>b__19(DbConnection conn)
+   at System.Data.Entity.SqlServer.SqlProviderServices.<>c__DisplayClass33.<UsingConnection>b__32()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.<>c__DisplayClass1.<Execute>b__0()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute(Action operation)
+   at System.Data.Entity.SqlServer.SqlProviderServices.UsingConnection(DbConnection sqlConnection, Action`1 act)
+   at System.Data.Entity.SqlServer.SqlProviderServices.UsingMasterConnection(DbConnection sqlConnection, Action`1 act)
+   at System.Data.Entity.SqlServer.SqlProviderServices.CreateDatabaseFromScript(Nullable`1 commandTimeout, DbConnection sqlConnection, String createDatabaseScript)
+   at System.Data.Entity.SqlServer.SqlProviderServices.DbCreateDatabase(DbConnection connection, Nullable`1 commandTimeout, StoreItemCollection storeItemCollection)
+   at System.Data.Entity.Core.Common.DbProviderServices.CreateDatabase(DbConnection connection, Nullable`1 commandTimeout, StoreItemCollection storeItemCollection)
+   at System.Data.Entity.Core.Objects.ObjectContext.CreateDatabase()
+   at System.Data.Entity.Migrations.Utilities.DatabaseCreator.Create(DbConnection connection)
+   at System.Data.Entity.Migrations.DbMigrator.EnsureDatabaseExists(Action mustSucceedToKeepDatabase)
+   at System.Data.Entity.Migrations.DbMigrator.Update(String targetMigration)
+   at System.Data.Entity.Internal.DatabaseCreator.CreateDatabase(InternalContext internalContext, Func`3 createMigrator, ObjectContext objectContext)
+   at System.Data.Entity.Internal.InternalContext.CreateDatabase(ObjectContext objectContext, DatabaseExistenceState existenceState)
+   at System.Data.Entity.Database.Create(DatabaseExistenceState existenceState)
+   at System.Data.Entity.CreateDatabaseIfNotExists`1.InitializeDatabase(TContext context)
+   at System.Data.Entity.Internal.InternalContext.<>c__DisplayClassf`1.<CreateInitializationAction>b__e()
+   at System.Data.Entity.Internal.InternalContext.PerformInitializationAction(Action action)
+   at System.Data.Entity.Internal.InternalContext.PerformDatabaseInitialization()
+   at System.Data.Entity.Internal.LazyInternalContext.<InitializeDatabase>b__4(InternalContext c)
+   at System.Data.Entity.Internal.RetryAction`1.PerformAction(TInput input)
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeDatabaseAction(Action`1 action)
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeDatabase()
+   at System.Data.Entity.Database.Initialize(Boolean force)
+   at Abp.EntityFramework.AbpDbContext.Initialize()
+   at Castle.MicroKernel.LifecycleConcerns.InitializationConcern.Apply(ComponentModel model, Object component)
+   at Castle.MicroKernel.ComponentActivator.AbstractComponentActivator.ApplyConcerns(IEnumerable`1 steps, Object instance)
+   at Castle.MicroKernel.ComponentActivator.AbstractComponentActivator.ApplyCommissionConcerns(Object instance)
+   at Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.InternalCreate(CreationContext context)
+   at Castle.MicroKernel.ComponentActivator.AbstractComponentActivator.Create(CreationContext context, Burden burden)
+   at Castle.MicroKernel.Lifestyle.AbstractLifestyleManager.CreateInstance(CreationContext context, Boolean trackedExternally)
+   at Castle.MicroKernel.Lifestyle.AbstractLifestyleManager.Resolve(CreationContext context, IReleasePolicy releasePolicy)
+   at Castle.MicroKernel.Handlers.DefaultHandler.ResolveCore(CreationContext context, Boolean requiresDecommission, Boolean instanceRequired, Burden& burden)
+   at Castle.MicroKernel.Handlers.ExtendedHandler.InvokeResolvePipeline(Int32 extensionIndex, ResolveInvocation invocation)
+   at Castle.MicroKernel.Handlers.ExtendedHandler.<>c__DisplayClass6.<InvokeResolvePipeline>b__5()
+   at Castle.MicroKernel.Handlers.ResolveInvocation.Proceed()
+   at Castle.MicroKernel.Handlers.ComponentLifecycleExtension.Intercept(ResolveInvocation invocation)
+   at Castle.MicroKernel.Handlers.ExtendedHandler.InvokeResolvePipeline(Int32 extensionIndex, ResolveInvocation invocation)
+   at Castle.MicroKernel.Handlers.ExtendedHandler.Resolve(CreationContext context, Boolean instanceRequired)
+   at Castle.MicroKernel.Handlers.AbstractHandler.Resolve(CreationContext context)
+   at Castle.MicroKernel.DefaultKernel.ResolveComponent(IHandler handler, Type service, IDictionary additionalArguments, IReleasePolicy policy)
+   at Castle.MicroKernel.DefaultKernel.Castle.MicroKernel.IKernelInternal.Resolve(Type service, IDictionary arguments, IReleasePolicy policy)
+   at Castle.MicroKernel.DefaultKernel.Resolve(Type service, IDictionary arguments)
+   at Castle.Windsor.WindsorContainer.Resolve[T]()
+   at Abp.Dependency.IocManager.Resolve[T]()
+   at Abp.EntityFramework.Uow.EfUnitOfWork.Resolve[TDbContext]()
+   at Abp.EntityFramework.Uow.EfUnitOfWork.GetOrCreateDbContext[TDbContext]()
+   at Abp.EntityFramework.Uow.UnitOfWorkExtensions.GetDbContext[TDbContext](IActiveUnitOfWork unitOfWork)
+   at Abp.EntityFramework.Uow.UnitOfWorkDbContextProvider`1.get_DbContext()
+   at Castle.Proxies.EfRepositoryBase`2Proxy_1.get_Context_callback()
+   at Castle.Proxies.Invocations.EfRepositoryBase`3_get_Context_2.InvokeMethodOnTarget()
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Abp.Domain.Uow.UnitOfWorkInterceptor.Intercept(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.Proxies.EfRepositoryBase`2Proxy_1.get_Context()
+   at Abp.EntityFramework.Repositories.EfRepositoryBase`3.get_Table()
+   at Castle.Proxies.EfRepositoryBase`2Proxy_1.get_Table_callback()
+   at Castle.Proxies.Invocations.EfRepositoryBase`3_get_Table_2.InvokeMethodOnTarget()
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Abp.Domain.Uow.UnitOfWorkInterceptor.Intercept(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.Proxies.EfRepositoryBase`2Proxy_1.get_Table()
+   at Castle.Proxies.EfRepositoryBase`2Proxy_1.GetAll_callback()
+   at Castle.Proxies.Invocations.EfRepositoryBase`3_GetAll_2.InvokeMethodOnTarget()
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Abp.Domain.Uow.UnitOfWorkInterceptor.Intercept(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.Proxies.EfRepositoryBase`2Proxy_1.GetAll()
+   at Abp.EntityFramework.Repositories.EfRepositoryBase`3.<FirstOrDefaultAsync>d__c.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.MultiTenancy.AbpTenantManager`3.<CreateAsync>d__2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at ITRACK.Web.Controllers.AccountController.<RegisterTenant>d__18.MoveNext() in C:\Users\nuwan.p\Source\Repos\ITRACK_WEB\EventCloud.Web\Controllers\AccountController.cs:line 317
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.Threading.InternalAsyncHelper.<AwaitTaskWithPostActionAndFinallyAndGetResult>d__10`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Mvc.Async.TaskAsyncActionDescriptor.EndExecute(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeAsynchronousActionMethod>b__36(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+ClientConnectionId:6def3286-4710-41a5-8dab-35ad3abe83e2
+Error Number:226,State:5,Class:16
+WARN  2016-09-15 15:57:59,627 [18   ] Default                                  - Can not find 'Events' in localization source 'ITRACK'! No default language is defined!
+WARN  2016-09-15 15:57:59,627 [18   ] Default                                  - Can not find 'About' in localization source 'ITRACK'! No default language is defined!
+DEBUG 2016-09-15 16:03:08,456 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2016-09-15 16:03:12,707 [1    ] Abp.Modules.AbpModuleManager             - Found 13 ABP modules in total.
+DEBUG 2016-09-15 16:03:12,711 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.7.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-15 16:03:12,715 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.7.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-15 16:03:12,715 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.7.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-15 16:03:12,734 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.7.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-15 16:03:12,734 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.7.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-15 16:03:12,734 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.7.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-15 16:03:12,749 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=0.7.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-15 16:03:12,750 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=0.7.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-15 16:03:12,750 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ITRACK.ITRACKApplicationModule, EventCloud.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-15 16:03:12,750 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ITRACK.ITRACKCoreModule, EventCloud.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-15 16:03:12,750 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ITRACK.ITRACKDataModule, EventCloud.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-15 16:03:12,750 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ITRACK.Web.ITRACKWebModule, EventCloud.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-15 16:03:12,750 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ITRACK.Api.ITRACKWebApiModule, EventCloud.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-15 16:03:12,773 [1    ] Abp.Modules.AbpModuleManager             - 13 modules loaded.
+DEBUG 2016-09-15 16:03:15,543 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2016-09-15 16:03:15,549 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2016-09-15 16:03:15,550 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2016-09-15 16:03:15,550 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: ITRACK
+DEBUG 2016-09-15 16:03:15,550 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2016-09-15 16:03:18,940 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 6 classes defines auto mapping attributes
+DEBUG 2016-09-15 16:03:18,940 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ITRACK.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2016-09-15 16:03:19,047 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ITRACK.Sessions.Dto.UserLoginInfoDto
+DEBUG 2016-09-15 16:03:19,053 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ITRACK.Events.Dtos.EventListDto
+DEBUG 2016-09-15 16:03:19,122 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ITRACK.Events.Dtos.EventRegistrationDto
+DEBUG 2016-09-15 16:03:19,124 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ITRACK.Events.Dtos.EventDetailOutput
+DEBUG 2016-09-15 16:03:19,125 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ITRACK.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2016-09-15 16:03:19,252 [1    ] Default                                  - Dynamic web api controller is created for type 'ITRACK.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2016-09-15 16:03:19,253 [1    ] Default                                  - Dynamic web api controller is created for type 'ITRACK.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2016-09-15 16:03:19,255 [1    ] Default                                  - Dynamic web api controller is created for type 'ITRACK.Statistics.IStatisticsAppService' with service name 'app/statistics'.
+DEBUG 2016-09-15 16:03:19,256 [1    ] Default                                  - Dynamic web api controller is created for type 'ITRACK.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2016-09-15 16:03:19,257 [1    ] Default                                  - Dynamic web api controller is created for type 'ITRACK.Events.IEventAppService' with service name 'app/event'.
+WARN  2016-09-15 16:03:25,711 [41   ] Default                                  - Can not find 'Events' in localization source 'ITRACK'! No default language is defined!
+WARN  2016-09-15 16:03:25,711 [41   ] Default                                  - Can not find 'About' in localization source 'ITRACK'! No default language is defined!
+WARN  2016-09-15 16:03:53,910 [41   ] Default                                  - Can not find 'TenancyName' in localization source 'ITRACK'! No default language is defined!
+WARN  2016-09-15 16:03:53,911 [41   ] Default                                  - Can not find 'Name' in localization source 'ITRACK'! No default language is defined!
+WARN  2016-09-15 16:03:53,911 [41   ] Default                                  - Can not find 'Surname' in localization source 'ITRACK'! No default language is defined!
+WARN  2016-09-15 16:03:53,911 [41   ] Default                                  - Can not find 'EmailAddress' in localization source 'ITRACK'! No default language is defined!
+WARN  2016-09-15 16:03:53,911 [41   ] Default                                  - Can not find 'Admin password' in localization source 'ITRACK'! No default language is defined!
+WARN  2016-09-15 16:03:54,230 [41   ] Default                                  - Can not find 'Events' in localization source 'ITRACK'! No default language is defined!
+WARN  2016-09-15 16:03:54,230 [41   ] Default                                  - Can not find 'About' in localization source 'ITRACK'! No default language is defined!
+WARN  2016-09-15 16:04:11,406 [41   ] Default                                  - Can not find 'TenancyName' in localization source 'ITRACK'! No default language is defined!
+WARN  2016-09-15 16:04:11,407 [41   ] Default                                  - Can not find 'Name' in localization source 'ITRACK'! No default language is defined!
+WARN  2016-09-15 16:04:11,407 [41   ] Default                                  - Can not find 'Surname' in localization source 'ITRACK'! No default language is defined!
+WARN  2016-09-15 16:04:11,407 [41   ] Default                                  - Can not find 'EmailAddress' in localization source 'ITRACK'! No default language is defined!
+WARN  2016-09-15 16:04:11,407 [41   ] Default                                  - Can not find 'Admin password' in localization source 'ITRACK'! No default language is defined!
+WARN  2016-09-15 16:04:11,786 [41   ] Default                                  - Can not find 'Events' in localization source 'ITRACK'! No default language is defined!
+WARN  2016-09-15 16:04:11,786 [41   ] Default                                  - Can not find 'About' in localization source 'ITRACK'! No default language is defined!
+WARN  2016-09-15 16:04:34,110 [45   ] Default                                  - Can not find 'Events' in localization source 'ITRACK'! No default language is defined!
+WARN  2016-09-15 16:04:34,110 [45   ] Default                                  - Can not find 'About' in localization source 'ITRACK'! No default language is defined!
+DEBUG 2016-09-15 16:05:03,746 [41   ] CK.Events.Notifications.EventUserEmailer - TODO: Send email to nuwan.p@voguetex.com -> Hey! There is a new event 'Test' on 9/16/2016 9:00:00 AM! Want to register?
+DEBUG 2016-09-15 16:05:31,155 [48   ] CK.Events.Notifications.EventUserEmailer - TODO: Send email to nuwan.p@voguetex.com -> Hey! There is a new event 'Test 2' on 9/16/2016 9:00:00 AM! Want to register?
+WARN  2016-09-15 16:10:59,590 [41   ] Default                                  - Can not find 'Events' in localization source 'ITRACK'! No default language is defined!
+WARN  2016-09-15 16:10:59,590 [41   ] Default                                  - Can not find 'About' in localization source 'ITRACK'! No default language is defined!
+WARN  2016-09-15 16:11:20,922 [45   ] Default                                  - Can not find 'LoginFailed' in localization source 'ITRACK'! No default language is defined!
+WARN  2016-09-15 16:11:20,922 [45   ] Default                                  - Can not find 'InvalidUserNameOrPassword' in localization source 'ITRACK'! No default language is defined!
+ERROR 2016-09-15 16:11:21,020 [41   ] .Mvc.Controllers.AbpHandleErrorAttribute - Abp.UI.UserFriendlyException: [LoginFailed]
+   at ITRACK.Web.Controllers.AccountController.<GetLoginResultAsync>d__10.MoveNext() in C:\Users\nuwan.p\Source\Repos\ITRACK_WEB\EventCloud.Web\Controllers\AccountController.cs:line 107
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at ITRACK.Web.Controllers.AccountController.<Login>d__9.MoveNext() in C:\Users\nuwan.p\Source\Repos\ITRACK_WEB\EventCloud.Web\Controllers\AccountController.cs:line 82
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Mvc.Async.TaskAsyncActionDescriptor.EndExecute(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeAsynchronousActionMethod>b__36(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+Abp.UI.UserFriendlyException: [LoginFailed]
+   at ITRACK.Web.Controllers.AccountController.<GetLoginResultAsync>d__10.MoveNext() in C:\Users\nuwan.p\Source\Repos\ITRACK_WEB\EventCloud.Web\Controllers\AccountController.cs:line 107
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at ITRACK.Web.Controllers.AccountController.<Login>d__9.MoveNext() in C:\Users\nuwan.p\Source\Repos\ITRACK_WEB\EventCloud.Web\Controllers\AccountController.cs:line 82
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Mvc.Async.TaskAsyncActionDescriptor.EndExecute(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeAsynchronousActionMethod>b__36(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+WARN  2016-09-15 16:11:30,124 [43   ] Default                                  - Can not find 'LoginFailed' in localization source 'ITRACK'! No default language is defined!
+WARN  2016-09-15 16:11:30,124 [43   ] Default                                  - Can not find 'InvalidUserNameOrPassword' in localization source 'ITRACK'! No default language is defined!
+ERROR 2016-09-15 16:11:30,190 [41   ] .Mvc.Controllers.AbpHandleErrorAttribute - Abp.UI.UserFriendlyException: [LoginFailed]
+   at ITRACK.Web.Controllers.AccountController.<GetLoginResultAsync>d__10.MoveNext() in C:\Users\nuwan.p\Source\Repos\ITRACK_WEB\EventCloud.Web\Controllers\AccountController.cs:line 107
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at ITRACK.Web.Controllers.AccountController.<Login>d__9.MoveNext() in C:\Users\nuwan.p\Source\Repos\ITRACK_WEB\EventCloud.Web\Controllers\AccountController.cs:line 82
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Mvc.Async.TaskAsyncActionDescriptor.EndExecute(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeAsynchronousActionMethod>b__36(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+Abp.UI.UserFriendlyException: [LoginFailed]
+   at ITRACK.Web.Controllers.AccountController.<GetLoginResultAsync>d__10.MoveNext() in C:\Users\nuwan.p\Source\Repos\ITRACK_WEB\EventCloud.Web\Controllers\AccountController.cs:line 107
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at ITRACK.Web.Controllers.AccountController.<Login>d__9.MoveNext() in C:\Users\nuwan.p\Source\Repos\ITRACK_WEB\EventCloud.Web\Controllers\AccountController.cs:line 82
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Mvc.Async.TaskAsyncActionDescriptor.EndExecute(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeAsynchronousActionMethod>b__36(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+WARN  2016-09-15 16:11:35,024 [45   ] Default                                  - Can not find 'LoginFailed' in localization source 'ITRACK'! No default language is defined!
+WARN  2016-09-15 16:11:35,024 [45   ] Default                                  - Can not find 'InvalidUserNameOrPassword' in localization source 'ITRACK'! No default language is defined!
+ERROR 2016-09-15 16:11:35,076 [41   ] .Mvc.Controllers.AbpHandleErrorAttribute - Abp.UI.UserFriendlyException: [LoginFailed]
+   at ITRACK.Web.Controllers.AccountController.<GetLoginResultAsync>d__10.MoveNext() in C:\Users\nuwan.p\Source\Repos\ITRACK_WEB\EventCloud.Web\Controllers\AccountController.cs:line 107
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at ITRACK.Web.Controllers.AccountController.<Login>d__9.MoveNext() in C:\Users\nuwan.p\Source\Repos\ITRACK_WEB\EventCloud.Web\Controllers\AccountController.cs:line 82
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Mvc.Async.TaskAsyncActionDescriptor.EndExecute(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeAsynchronousActionMethod>b__36(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+Abp.UI.UserFriendlyException: [LoginFailed]
+   at ITRACK.Web.Controllers.AccountController.<GetLoginResultAsync>d__10.MoveNext() in C:\Users\nuwan.p\Source\Repos\ITRACK_WEB\EventCloud.Web\Controllers\AccountController.cs:line 107
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at ITRACK.Web.Controllers.AccountController.<Login>d__9.MoveNext() in C:\Users\nuwan.p\Source\Repos\ITRACK_WEB\EventCloud.Web\Controllers\AccountController.cs:line 82
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Mvc.Async.TaskAsyncActionDescriptor.EndExecute(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeAsynchronousActionMethod>b__36(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+WARN  2016-09-15 16:11:39,069 [43   ] Default                                  - Can not find 'LoginFailed' in localization source 'ITRACK'! No default language is defined!
+WARN  2016-09-15 16:11:39,069 [43   ] Default                                  - Can not find 'InvalidUserNameOrPassword' in localization source 'ITRACK'! No default language is defined!
+ERROR 2016-09-15 16:11:39,117 [41   ] .Mvc.Controllers.AbpHandleErrorAttribute - Abp.UI.UserFriendlyException: [LoginFailed]
+   at ITRACK.Web.Controllers.AccountController.<GetLoginResultAsync>d__10.MoveNext() in C:\Users\nuwan.p\Source\Repos\ITRACK_WEB\EventCloud.Web\Controllers\AccountController.cs:line 107
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at ITRACK.Web.Controllers.AccountController.<Login>d__9.MoveNext() in C:\Users\nuwan.p\Source\Repos\ITRACK_WEB\EventCloud.Web\Controllers\AccountController.cs:line 82
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Mvc.Async.TaskAsyncActionDescriptor.EndExecute(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeAsynchronousActionMethod>b__36(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+Abp.UI.UserFriendlyException: [LoginFailed]
+   at ITRACK.Web.Controllers.AccountController.<GetLoginResultAsync>d__10.MoveNext() in C:\Users\nuwan.p\Source\Repos\ITRACK_WEB\EventCloud.Web\Controllers\AccountController.cs:line 107
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at ITRACK.Web.Controllers.AccountController.<Login>d__9.MoveNext() in C:\Users\nuwan.p\Source\Repos\ITRACK_WEB\EventCloud.Web\Controllers\AccountController.cs:line 82
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Mvc.Async.TaskAsyncActionDescriptor.EndExecute(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeAsynchronousActionMethod>b__36(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+WARN  2016-09-15 16:11:50,212 [38   ] Default                                  - Can not find 'Events' in localization source 'ITRACK'! No default language is defined!
+WARN  2016-09-15 16:11:50,212 [38   ] Default                                  - Can not find 'About' in localization source 'ITRACK'! No default language is defined!
+ERROR 2016-09-15 16:13:28,940 [41   ] lers.Filters.AbpExceptionFilterAttribute - Abp.Runtime.Validation.AbpValidationException: Method arguments are not valid! See ValidationErrors for details.
+   at Abp.Runtime.Validation.Interception.MethodInvocationValidator.Validate()
+   at Abp.Runtime.Validation.Interception.ValidationInterceptor.Intercept(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.Proxies.EventAppServiceProxy.Create(CreateEventInput input)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Abp.WebApi.Controllers.Dynamic.Interceptors.AbpDynamicApiControllerInterceptor`1.Intercept(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.Proxies.DynamicApiController`1Proxy_1.Create(CreateEventInput input)
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__7(Object instance, Object[] methodParameters)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at Abp.WebApi.Controllers.Dynamic.Selectors.DynamicHttpActionDescriptor.<ExecuteAsync>b__0(Task`1 task)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.AuthenticationFilterResult.<ExecuteAsync>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()
+Abp.Runtime.Validation.AbpValidationException: Method arguments are not valid! See ValidationErrors for details.
+   at Abp.Runtime.Validation.Interception.MethodInvocationValidator.Validate()
+   at Abp.Runtime.Validation.Interception.ValidationInterceptor.Intercept(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.Proxies.EventAppServiceProxy.Create(CreateEventInput input)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Abp.WebApi.Controllers.Dynamic.Interceptors.AbpDynamicApiControllerInterceptor`1.Intercept(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.Proxies.DynamicApiController`1Proxy_1.Create(CreateEventInput input)
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__7(Object instance, Object[] methodParameters)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at Abp.WebApi.Controllers.Dynamic.Selectors.DynamicHttpActionDescriptor.<ExecuteAsync>b__0(Task`1 task)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.AuthenticationFilterResult.<ExecuteAsync>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()
+WARN  2016-09-15 16:13:28,941 [41   ] Default                                  - There are 1 validation errors:
+WARN  2016-09-15 16:13:28,941 [41   ] Default                                  - The Title field is required. (Title)
+DEBUG 2016-09-15 16:14:09,885 [45   ] CK.Events.Notifications.EventUserEmailer - TODO: Send email to nuwan.p@voguetex.com -> Hey! There is a new event 'Itrack' on 9/16/2016 9:00:00 AM! Want to register?
+DEBUG 2016-09-15 18:07:53,499 [53   ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2016-09-15 18:08:01,485 [53   ] Abp.Modules.AbpModuleManager             - Found 13 ABP modules in total.
+DEBUG 2016-09-15 18:08:01,553 [53   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.7.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-15 18:08:01,557 [53   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.7.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-15 18:08:01,558 [53   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.7.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-15 18:08:01,600 [53   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.7.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-15 18:08:01,600 [53   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.7.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-15 18:08:01,600 [53   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.7.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-15 18:08:01,630 [53   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=0.7.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-15 18:08:01,630 [53   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=0.7.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-15 18:08:01,630 [53   ] Abp.Modules.AbpModuleManager             - Loaded module: ITRACK.ITRACKApplicationModule, EventCloud.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-15 18:08:01,631 [53   ] Abp.Modules.AbpModuleManager             - Loaded module: ITRACK.ITRACKCoreModule, EventCloud.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-15 18:08:01,632 [53   ] Abp.Modules.AbpModuleManager             - Loaded module: ITRACK.ITRACKDataModule, EventCloud.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-15 18:08:01,632 [53   ] Abp.Modules.AbpModuleManager             - Loaded module: ITRACK.Web.ITRACKWebModule, EventCloud.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-15 18:08:01,632 [53   ] Abp.Modules.AbpModuleManager             - Loaded module: ITRACK.Api.ITRACKWebApiModule, EventCloud.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-15 18:08:01,703 [53   ] Abp.Modules.AbpModuleManager             - 13 modules loaded.
+DEBUG 2016-09-15 18:08:10,351 [53   ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2016-09-15 18:08:10,405 [53   ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2016-09-15 18:08:10,449 [53   ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2016-09-15 18:08:10,449 [53   ] Abp.Localization.LocalizationManager     - Initialized localization source: ITRACK
+DEBUG 2016-09-15 18:08:10,462 [53   ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2016-09-15 18:08:16,532 [53   ] Abp.AutoMapper.AbpAutoMapperModule       - Found 6 classes defines auto mapping attributes
+DEBUG 2016-09-15 18:08:16,532 [53   ] Abp.AutoMapper.AbpAutoMapperModule       - ITRACK.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2016-09-15 18:08:16,834 [53   ] Abp.AutoMapper.AbpAutoMapperModule       - ITRACK.Sessions.Dto.UserLoginInfoDto
+DEBUG 2016-09-15 18:08:16,843 [53   ] Abp.AutoMapper.AbpAutoMapperModule       - ITRACK.Events.Dtos.EventListDto
+DEBUG 2016-09-15 18:08:16,881 [53   ] Abp.AutoMapper.AbpAutoMapperModule       - ITRACK.Events.Dtos.EventRegistrationDto
+DEBUG 2016-09-15 18:08:16,885 [53   ] Abp.AutoMapper.AbpAutoMapperModule       - ITRACK.Events.Dtos.EventDetailOutput
+DEBUG 2016-09-15 18:08:16,886 [53   ] Abp.AutoMapper.AbpAutoMapperModule       - ITRACK.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2016-09-15 18:08:17,037 [53   ] Default                                  - Dynamic web api controller is created for type 'ITRACK.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2016-09-15 18:08:17,038 [53   ] Default                                  - Dynamic web api controller is created for type 'ITRACK.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2016-09-15 18:08:17,040 [53   ] Default                                  - Dynamic web api controller is created for type 'ITRACK.Statistics.IStatisticsAppService' with service name 'app/statistics'.
+DEBUG 2016-09-15 18:08:17,041 [53   ] Default                                  - Dynamic web api controller is created for type 'ITRACK.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2016-09-15 18:08:17,042 [53   ] Default                                  - Dynamic web api controller is created for type 'ITRACK.Events.IEventAppService' with service name 'app/event'.
+WARN  2016-09-15 18:08:50,781 [7    ] Default                                  - Can not find 'Events' in localization source 'ITRACK'! No default language is defined!
+WARN  2016-09-15 18:08:50,782 [7    ] Default                                  - Can not find 'About' in localization source 'ITRACK'! No default language is defined!
+WARN  2016-09-15 18:09:36,431 [34   ] Default                                  - Can not find 'Events' in localization source 'ITRACK'! No default language is defined!
+WARN  2016-09-15 18:09:36,431 [34   ] Default                                  - Can not find 'About' in localization source 'ITRACK'! No default language is defined!
+WARN  2016-09-15 18:09:58,135 [7    ] Default                                  - Can not find 'LoginFailed' in localization source 'ITRACK'! No default language is defined!
+WARN  2016-09-15 18:09:58,135 [7    ] Default                                  - Can not find 'InvalidUserNameOrPassword' in localization source 'ITRACK'! No default language is defined!
+ERROR 2016-09-15 18:09:58,699 [27   ] .Mvc.Controllers.AbpHandleErrorAttribute - Abp.UI.UserFriendlyException: [LoginFailed]
+   at ITRACK.Web.Controllers.AccountController.<GetLoginResultAsync>d__10.MoveNext() in C:\Users\nuwan.p\Source\Repos\ITRACK_WEB\EventCloud.Web\Controllers\AccountController.cs:line 107
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at ITRACK.Web.Controllers.AccountController.<Login>d__9.MoveNext() in C:\Users\nuwan.p\Source\Repos\ITRACK_WEB\EventCloud.Web\Controllers\AccountController.cs:line 82
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Mvc.Async.TaskAsyncActionDescriptor.EndExecute(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeAsynchronousActionMethod>b__36(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+Abp.UI.UserFriendlyException: [LoginFailed]
+   at ITRACK.Web.Controllers.AccountController.<GetLoginResultAsync>d__10.MoveNext() in C:\Users\nuwan.p\Source\Repos\ITRACK_WEB\EventCloud.Web\Controllers\AccountController.cs:line 107
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at ITRACK.Web.Controllers.AccountController.<Login>d__9.MoveNext() in C:\Users\nuwan.p\Source\Repos\ITRACK_WEB\EventCloud.Web\Controllers\AccountController.cs:line 82
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Mvc.Async.TaskAsyncActionDescriptor.EndExecute(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeAsynchronousActionMethod>b__36(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+WARN  2016-09-15 18:10:05,051 [27   ] Default                                  - Can not find 'Events' in localization source 'ITRACK'! No default language is defined!
+WARN  2016-09-15 18:10:05,051 [27   ] Default                                  - Can not find 'About' in localization source 'ITRACK'! No default language is defined!
+DEBUG 2016-09-15 18:16:06,164 [45   ] CK.Events.Notifications.EventUserEmailer - TODO: Send email to nuwan.p@voguetex.com -> Hey! There is a new event 'Test' on 9/16/2016 9:00:00 AM! Want to register?
+DEBUG 2016-09-15 18:16:29,766 [41   ] CK.Events.Notifications.EventUserEmailer - TODO: Send email to nuwan.p@voguetex.com -> Hey! There is a new event 'Test 2' on 9/16/2016 9:00:00 AM! Want to register?
+DEBUG 2016-09-15 18:48:13,453 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2016-09-15 18:48:20,388 [1    ] Abp.Modules.AbpModuleManager             - Found 13 ABP modules in total.
+DEBUG 2016-09-15 18:48:20,397 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.7.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-15 18:48:20,401 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.7.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-15 18:48:20,401 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.7.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-15 18:48:20,413 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.7.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-15 18:48:20,413 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.7.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-15 18:48:20,413 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.7.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-15 18:48:20,438 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=0.7.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-15 18:48:20,439 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=0.7.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-15 18:48:20,439 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ITRACK.ITRACKApplicationModule, EventCloud.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-15 18:48:20,439 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ITRACK.ITRACKCoreModule, EventCloud.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-15 18:48:20,439 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ITRACK.ITRACKDataModule, EventCloud.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-15 18:48:20,440 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ITRACK.Web.ITRACKWebModule, EventCloud.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-15 18:48:20,440 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ITRACK.Api.ITRACKWebApiModule, EventCloud.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-15 18:48:20,447 [1    ] Abp.Modules.AbpModuleManager             - 13 modules loaded.
+DEBUG 2016-09-15 18:48:26,116 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2016-09-15 18:48:26,123 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2016-09-15 18:48:26,238 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2016-09-15 18:48:26,238 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: ITRACK
+DEBUG 2016-09-15 18:48:26,361 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2016-09-15 18:48:31,900 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 6 classes defines auto mapping attributes
+DEBUG 2016-09-15 18:48:31,900 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ITRACK.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2016-09-15 18:48:32,101 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ITRACK.Sessions.Dto.UserLoginInfoDto
+DEBUG 2016-09-15 18:48:32,107 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ITRACK.Events.Dtos.EventListDto
+DEBUG 2016-09-15 18:48:32,196 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ITRACK.Events.Dtos.EventRegistrationDto
+DEBUG 2016-09-15 18:48:32,200 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ITRACK.Events.Dtos.EventDetailOutput
+DEBUG 2016-09-15 18:48:32,203 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ITRACK.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2016-09-15 18:48:32,372 [1    ] Default                                  - Dynamic web api controller is created for type 'ITRACK.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2016-09-15 18:48:32,374 [1    ] Default                                  - Dynamic web api controller is created for type 'ITRACK.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2016-09-15 18:48:32,375 [1    ] Default                                  - Dynamic web api controller is created for type 'ITRACK.Statistics.IStatisticsAppService' with service name 'app/statistics'.
+DEBUG 2016-09-15 18:48:32,376 [1    ] Default                                  - Dynamic web api controller is created for type 'ITRACK.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2016-09-15 18:48:32,377 [1    ] Default                                  - Dynamic web api controller is created for type 'ITRACK.Events.IEventAppService' with service name 'app/event'.
+WARN  2016-09-15 18:48:54,669 [61   ] Default                                  - Can not find 'TenancyName' in localization source 'ITRACK'! No default language is defined!
+WARN  2016-09-15 18:48:54,670 [61   ] Default                                  - Can not find 'Name' in localization source 'ITRACK'! No default language is defined!
+WARN  2016-09-15 18:48:54,670 [61   ] Default                                  - Can not find 'Surname' in localization source 'ITRACK'! No default language is defined!
+WARN  2016-09-15 18:48:54,670 [61   ] Default                                  - Can not find 'EmailAddress' in localization source 'ITRACK'! No default language is defined!
+WARN  2016-09-15 18:48:54,670 [61   ] Default                                  - Can not find 'Admin password' in localization source 'ITRACK'! No default language is defined!
+WARN  2016-09-15 18:49:33,218 [58   ] Default                                  - Can not find 'Events' in localization source 'ITRACK'! No default language is defined!
+WARN  2016-09-15 18:49:33,218 [58   ] Default                                  - Can not find 'About' in localization source 'ITRACK'! No default language is defined!
+WARN  2016-09-15 18:49:52,428 [68   ] Default                                  - Can not find 'Events' in localization source 'ITRACK'! No default language is defined!
+WARN  2016-09-15 18:49:52,428 [68   ] Default                                  - Can not find 'About' in localization source 'ITRACK'! No default language is defined!

@@ -7,8 +7,8 @@
     <ProjectGuid>{17298EA0-AF73-4F30-B6F1-2066100D7D74}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>EventCloud</RootNamespace>
-    <AssemblyName>EventCloud.Core</AssemblyName>
+    <RootNamespace>ITRACK</RootNamespace>
+    <AssemblyName>ITRACK.Core</AssemblyName>
     <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
@@ -95,12 +95,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Authorization\Roles\StaticRoleNames.cs" />
-    <Compile Include="Company\IStyleCreationPolicy.cs" />
-    <Compile Include="Company\IStyleManager.cs" />
-    <Compile Include="Company\Style.cs" />
-    <Compile Include="Company\StyleManager.cs" />
+    <Compile Include="Costing\IStyleCreationPolicy.cs" />
+    <Compile Include="Costing\IStyleManager.cs" />
+    <Compile Include="Costing\Style.cs" />
+    <Compile Include="Costing\StyleManager.cs" />
     <Compile Include="Configuration\EventCloudSettingNames.cs" />
     <Compile Include="Configuration\EventCloudSettingProvider.cs" />
+    <Compile Include="Costing\WorkOrder.cs" />
+    <Compile Include="Costing\WorkOrderRatio.cs" />
+    <Compile Include="Cutting\CuttingRatio.cs" />
     <Compile Include="Domain\Events\DomainEvents.cs" />
     <Compile Include="Editions\EditionManager.cs" />
     <Compile Include="EventCloudConsts.cs" />

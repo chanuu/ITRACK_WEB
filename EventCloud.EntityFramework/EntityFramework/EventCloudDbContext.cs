@@ -2,6 +2,8 @@
 using System.Data.Entity;
 using Abp.Zero.EntityFramework;
 using ITRACK.Authorization.Roles;
+using ITRACK.Company;
+using ITRACK.Costing;
 using ITRACK.Events;
 using ITRACK.MultiTenancy;
 using ITRACK.Users;
@@ -11,6 +13,12 @@ namespace ITRACK.EntityFramework
     public class ITRACKDbContext : AbpZeroDbContext<Tenant, Role, User>
     {
         public virtual IDbSet<Event> Events { get; set; }
+
+        public virtual IDbSet<Style> Styles { get; set; }
+
+        public virtual IDbSet<WorkOrder> WorkOrders { get; set; }
+
+        public virtual IDbSet<WorkOrderRatio> WorkOrderRatios { get; set; }
 
         public virtual IDbSet<EventRegistration> EventRegistrations { get; set; }
 

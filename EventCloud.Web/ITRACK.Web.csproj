@@ -11,8 +11,8 @@
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>EventCloud.Web</RootNamespace>
-    <AssemblyName>EventCloud.Web</AssemblyName>
+    <RootNamespace>ITRACK.Web</RootNamespace>
+    <AssemblyName>ITRACK.Web</AssemblyName>
     <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
@@ -305,6 +305,9 @@
     <Content Include="App\Main\views\events\index.js" />
     <Content Include="App\Main\views\about\about.js" />
     <Content Include="Content\bootstrap-cosmo.min.css" />
+    <Content Include="Content\bootstrap-metronic-theme.css" />
+    <Content Include="Content\bootstrap-metronic.css" />
+    <Content Include="Content\bootstrap-metronic.min.css" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -446,6 +449,7 @@
     <Content Include="App\Main\views\about\about.css.map">
       <DependentUpon>about.css</DependentUpon>
     </Content>
+    <Content Include="Content\bootstrap-metronic.css.map" />
     <None Include="Properties\PublishProfiles\Publish_Release_FileSystem.pubxml" />
     <None Include="Scripts\jquery-2.1.4.intellisense.js" />
     <Content Include="Scripts\i18n\angular-locale_aa-dj.js" />
